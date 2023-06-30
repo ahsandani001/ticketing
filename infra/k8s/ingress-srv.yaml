@@ -7,13 +7,13 @@ metadata:
     nginx.ingress.kubernetes.io/use-regex: 'true'
 spec: 
   rules: 
-    - host: host.docker.internal
+    - host: localhost
       http: 
         paths: 
           - pathType: Prefix
             path: /api/users
             backend: 
               service:
-                name: auth-srv
+                name: app-srv
                 port:
                   number: 3005
