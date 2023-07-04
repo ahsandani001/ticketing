@@ -1,0 +1,28 @@
+Commands for kubernetes
+-----------------------
+kubectl get deployments
+kubectl get pods
+kubectl get services
+
+kubectl apply -f file-name.yaml
+
+kubectl describe pod
+kubectl describe service
+kubectl describe deployment
+
+kubectl delete pod pod-name
+kubectl delete service service-name
+kubectl delete deployment deployment-name
+
+Using skaffold
+--------------
+create settings for skaffold to listen only deployment files directory
+
+skaffold dev => start server and create resources (deployments/services)
+skaffold delete => clean cache 
+
+
+Kubernetes secrets
+------------------
+kubectl get secrets
+kubectl create secret generic [jwt-secret => name of secret] --from-literal=JWT_KEY=asdf 
