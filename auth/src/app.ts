@@ -22,7 +22,7 @@ app.use(signinRouter);
 app.use(signoutRouter);
 app.use(signupRouter);
 
-app.all('*', () => {
+app.all('*', (req, res) => {
     throw new NotFoundError();
 })
 
