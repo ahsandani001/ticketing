@@ -1,4 +1,4 @@
-# Microservices-Blog
+# Ticketing App
 
 This is a ticketing application built on microservices architecture. This application have several features:
 
